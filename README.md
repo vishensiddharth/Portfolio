@@ -90,3 +90,5 @@ All content is in the component files — just update the data arrays at the top
 ---
 
 Built with ❤️ for Siddharth Singh
+phase 2 will update soon
+added testing doscument
