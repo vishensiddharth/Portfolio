@@ -145,6 +145,18 @@ export default function Hero() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </motion.a>
+              <motion.a
+                href="/Siddharth_Singh_Resume.pdf"
+                download
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.97 }}
+                className="px-6 py-3 rounded-xl font-semibold text-muted border border-border hover:border-accent/40 hover:text-accent hover:bg-accent/5 transition-all duration-300 flex items-center gap-2"
+              >
+                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+                Download CV
+              </motion.a>
             </motion.div>
 
             {/* Social Links */}
