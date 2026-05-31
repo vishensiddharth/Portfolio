@@ -16,6 +16,7 @@ const projects = [
     emoji: '🛒',
     mockup: 'phone',
     screenshot: '/lulu.png',
+    url: 'gcc.luluhypermarket.com',
   },
   {
     name: 'Ajmal Perfume',
@@ -29,19 +30,21 @@ const projects = [
     emoji: '✨',
     mockup: 'phone',
     screenshot: '/ajmal.png',
+    url: 'en-ae.ajmal.com',
   },
   {
     name: 'Ooka',
     tagline: 'Next-gen retail mobile & web app',
-    description: 'Omnichannel retail on Magento Cloud with blazing-fast Next.js storefront and React Native app, focused on UX and performance.',
-    tech: ['React Native', 'Magento Cloud', 'Next.js'],
+    description: 'Omni channel retail on Magento Cloud with blazing-fast Next.js storefront and React Native app, focused on UX and performance.',
+    tech: ['Next.js', 'Magento Cloud', 'React Native'],
     color: '#F59E0B',
     colorDim: 'rgba(245,158,11,0.12)',
     colorBorder: 'rgba(245,158,11,0.25)',
     highlight: 'Headless',
     emoji: '🚀',
-    mockup: 'phone',
+    mockup: 'desktop',
     screenshot: '/ooka.png',
+    url: 'me.ooka.com',
   },
   {
     name: 'Wingreens',
@@ -55,6 +58,7 @@ const projects = [
     emoji: '🌿',
     mockup: 'desktop',
     screenshot: '/wingreens.png',
+    url: 'wingreensworld.com',
   },
 ]
 
@@ -139,7 +143,7 @@ function DesktopMockup({ project, active }: { project: typeof projects[0], activ
             <svg width="8" height="8" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth={2}>
               <rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/>
             </svg>
-            <span style={{ fontSize: 8, color: 'rgba(255,255,255,0.4)', fontFamily: 'monospace' }}>wingreensworld.com</span>
+            <span style={{ fontSize: 8, color: 'rgba(255,255,255,0.4)', fontFamily: 'monospace' }}>{project.url}</span>
           </div>
           {/* Reload icon */}
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" strokeWidth={2}>
