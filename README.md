@@ -89,5 +89,5 @@ All content is in the component files — just update the data arrays at the top
 
 ---
 
-Built with ❤️ for Siddharth Singh
-pahse 2 will update soon
+Built by  Siddharth Singh
+Superfast hosting on vecel
