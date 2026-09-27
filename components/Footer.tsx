@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export default function Footer() {
   return (
-    <footer className="py-16 border-t border-border relative overflow-hidden">
+    <footer id="contact" className="py-16 border-t border-border relative overflow-hidden">
       <div className="orb w-[300px] h-[200px] bg-accent/4 top-0 left-1/2 -translate-x-1/2" />
 
       <div className="max-w-6xl mx-auto px-6 text-center relative z-10">
