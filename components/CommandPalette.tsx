@@ -145,9 +145,9 @@ export default function CommandPalette() {
 
   return (
     <>
-      {/* Trigger hint — bottom right */}
+      {/* Trigger hint — bottom right (beside AI Chat) */}
       <div
-        className="fixed bottom-6 right-6 z-40 hidden md:flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer select-none"
+        className="fixed bottom-6 right-36 z-40 hidden md:flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer select-none"
         style={{
           background: 'rgba(13,20,32,0.85)',
           border: '1px solid rgba(0,212,255,0.15)',
