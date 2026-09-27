@@ -2,6 +2,49 @@
 import { useEffect, useRef, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 
+const proficiencies = [
+  { name: 'React Native', level: 95, color: '#61DAFB' },
+  { name: 'Next.js', level: 92, color: '#ffffff' },
+  { name: 'React.js', level: 94, color: '#61DAFB' },
+  { name: 'GraphQL', level: 82, color: '#E535AB' },
+  { name: 'Node.js', level: 85, color: '#68A063' },
+  { name: 'TypeScript', level: 88, color: '#3178C6' },
+  { name: 'SFCC', level: 75, color: '#F59E0B' },
+  { name: 'Redux', level: 87, color: '#764ABC' },
+]
+
+function SkillBar({ name, level, color, delay }: { name: string; level: number; color: string; delay: number }) {
+  const [width, setWidth] = useState(0)
+  const [barRef, barInView] = useInView({ triggerOnce: true, threshold: 0.3 })
+
+  useEffect(() => {
+    if (barInView) {
+      const t = setTimeout(() => setWidth(level), delay)
+      return () => clearTimeout(t)
+    }
+  }, [barInView, level, delay])
+
+  return (
+    <div ref={barRef} className="group">
+      <div className="flex justify-between items-center mb-2">
+        <span className="text-sm font-mono text-muted group-hover:text-text transition-colors duration-300">{name}</span>
+        <span className="text-xs font-mono tabular-nums" style={{ color }}>{width}%</span>
+      </div>
+      <div className="h-1.5 rounded-full bg-surface border border-border overflow-hidden">
+        <div
+          className="h-full rounded-full transition-all ease-out"
+          style={{
+            width: `${width}%`,
+            transitionDuration: '1.2s',
+            background: `linear-gradient(90deg, ${color}88, ${color})`,
+            boxShadow: `0 0 10px ${color}55`,
+          }}
+        />
+      </div>
+    </div>
+  )
+}
+
 const orbits = [
   {
     radius: 80,
@@ -332,6 +375,25 @@ export default function Skills() {
               </div>
             ))
           )}
+        </div>
+
+        {/* ── Proficiency Bars ── */}
+        <div className="mt-16 pt-10 border-t border-border">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="section-number">PROFICIENCY</div>
+            <div className="flex-1 h-px bg-border" />
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-6">
+            {proficiencies.map((skill, i) => (
+              <SkillBar
+                key={skill.name}
+                name={skill.name}
+                level={skill.level}
+                color={skill.color}
+                delay={i * 100}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

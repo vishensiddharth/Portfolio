@@ -70,7 +70,7 @@ export default function Hero() {
             >
               <TypeAnimation
                 sequence={[
-                  'Team Lead @ Codilar Technologies',
+                  'Senior Software Engineer @ Under Armour',
                   2000,
                   'Frontend & Full Stack Engineer',
                   2000,

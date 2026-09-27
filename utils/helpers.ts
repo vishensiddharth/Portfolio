@@ -21,7 +21,6 @@ export function generateAnalyticsSummary(visitors: number[], bounceRates: number
   }, 0)
 
   const trendDirection = trend > 0 ? 'growing' : trend < 0 ? 'declining' : 'stable'
-  const trendDirection = trend > 0 ? 'growing' : trend < 0 ? 'declining' : 'stable'
 
   const engagementScore = Math.min(100, Math.round(
     (1 - weightedBounce / 100) * 60 +
