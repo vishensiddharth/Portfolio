@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import SpotifyNowPlaying from '@/components/SpotifyNowPlaying'
 
 export default function Footer() {
   return (
@@ -38,7 +39,7 @@ export default function Footer() {
             </motion.a>
           </div>
 
-          <div className="flex items-center justify-center gap-6 mb-10">
+          <div className="flex items-center justify-center gap-6 mb-8">
             <a href="https://www.linkedin.com/in/siddharth-singh-12360315a/" target="_blank" rel="noreferrer"
               className="text-muted hover:text-accent transition-colors font-mono text-sm">
               LinkedIn ↗
@@ -50,6 +51,11 @@ export default function Footer() {
               <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
               Available
             </span>
+          </div>
+
+          {/* Spotify Now Playing */}
+          <div className="flex justify-center mb-10">
+            <SpotifyNowPlaying />
           </div>
 
           <div className="border-t border-border pt-6">

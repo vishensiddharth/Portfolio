@@ -8,16 +8,12 @@ import Education from '@/components/Education'
 import Footer from '@/components/Footer'
 import Cursor from '@/components/Cursor'
 import CommandPalette from '@/components/CommandPalette'
-import StorySpine from '@/components/StorySpine'
-import ChatWidget from '@/components/ChatWidget'
 
 export default function Home() {
   return (
     <>
       <Cursor />
-      <StorySpine />
       <CommandPalette />
-      <ChatWidget />
       <Navbar />
       <main>
         <Hero />
