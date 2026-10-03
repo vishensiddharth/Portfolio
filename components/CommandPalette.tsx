@@ -14,9 +14,10 @@ interface Command {
 const NAV_SECTIONS = [
   { id: 'hero',       label: 'Home',       icon: '🏠', description: 'Back to the top',            keywords: ['home', 'top', 'start'] },
   { id: 'skills',     label: 'Skills',     icon: '⚡', description: 'Tech Arsenal & Proficiency',  keywords: ['skills', 'tech', 'stack', 'tools', 'arsenal'] },
-  { id: 'experience', label: 'Experience', icon: '💼', description: 'Work History & Timeline',     keywords: ['experience', 'work', 'job', 'history', 'career'] },
-  { id: 'projects',   label: 'Projects',   icon: '🚀', description: 'Featured Projects',           keywords: ['projects', 'portfolio', 'work', 'builds'] },
-  { id: 'education',  label: 'Education',  icon: '🎓', description: 'Academic Background',         keywords: ['education', 'degree', 'college', 'university'] },
+  { id: 'experience',     label: 'Experience',      icon: '💼', description: 'Work History & Timeline',     keywords: ['experience', 'work', 'job', 'history', 'career'] },
+  { id: 'projects',       label: 'Projects',        icon: '🚀', description: 'Featured Projects',           keywords: ['projects', 'portfolio', 'work', 'builds'] },
+  { id: 'github-activity', label: 'GitHub Activity', icon: '📈', description: 'Live Commits & Contributions', keywords: ['github', 'activity', 'commits', 'contributions', 'heatmap', 'open source'] },
+  { id: 'education',      label: 'Education',       icon: '🎓', description: 'Academic Background',         keywords: ['education', 'degree', 'college', 'university'] },
   { id: 'contact',    label: 'Contact',    icon: '📬', description: 'Get in touch',                keywords: ['contact', 'email', 'reach', 'hire', 'message'] },
 ]
 
